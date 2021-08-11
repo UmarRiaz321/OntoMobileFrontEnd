@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align:initial;
 }
 
 .App-logo {
@@ -15,7 +15,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 15vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,7 +23,20 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.LoadCreatContainer{
 
+  background-color: azure;
+  width: 100vw;
+  height: 50vh;
+  padding: 0%;
+}
+.LoadButton{
+  width: 100vw;
+  align-items: center;
+  padding: 0%;
+  margin: 5%;
+  border: solid,2px,black;
+}
 .App-link {
   color: #61dafb;
 }
@@ -36,3 +49,241 @@
     transform: rotate(360deg);
   }
 }
+ .loader {
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: helvetica, arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: green;
+    letter-spacing: 0.2em;
+  }
+  .loader::before, .loader::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: green;
+    position: absolute;
+    animation: load 0.7s infinite alternate ease-in-out;
+  }
+  .loader::before {
+    top: 0;
+  }
+  .loader::after {
+    bottom: 0;
+  }
+  
+  @keyframes load {
+    0% {
+      left: 0;
+      height: 30px;
+      width: 15px;
+    }
+    50% {
+      height: 8px;
+      width: 40px;
+    }
+    100% {
+      left: 235px;
+      height: 30px;
+      width: 15px;
+    }
+  }
+
+  .MenuList {
+    background-color:  whitesmoke;
+  }
+  .MenuList ul{
+    list-style-position:inside;
+    cursor: pointer;
+  }
+  .MenuList li{
+   padding: 1%;
+   
+  }
+  .MenuList li {
+    border: 0.5px solid lightgray;
+   }
+   .MenuList ul :active{
+    border: 0.5px solid whitesmoke;
+    background-color: grey;
+   }
+   .MenuList li a{
+     color: black;
+   }
+   .MenuList li a :hover{
+    color: white
+  }
+
+  .ActiveOnto{
+    width: 100vw;
+    align-items: initial;
+    padding: 0.5%;
+    margin-left: 0%;
+    position: fixed;
+    left:0;
+    border: 2px solid grey;
+    margin-top: 5px;
+  }
+  .input{
+    width: 80vw;
+    padding: 0.5%;
+    margin-left: 5px;
+  }
+  .ContentContainer{
+    border: 1px solid grey;
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 100%;
+    max-height: 100%;
+  }
+  .ContentContainerIns{
+    border: 1px solid grey;
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 100%;
+    max-height: 100%;
+    
+  }
+  .Heirachy{
+    height: 100vh ;
+    position: relative;
+    overflow-y: scroll;
+    border-right: 2px solid black ;
+  }
+  .HeirachyIns{
+    max-height: 50vh ;
+    position: relative;
+    overflow-y: scroll;
+    border-right: 2px solid black ;
+  }
+  .pList{
+    max-height: 500px;
+    overflow-y:scroll;
+  }
+  .MembersHeading{
+    padding: 1%;
+    border: 1px solid grey;
+  }
+  .MemberList{
+   overflow-y: scroll;
+   height: 60vh;
+  }
+  .InstanceList{
+    list-style: none;
+    margin-top: 2%;
+  }
+  .iconHolder{
+    cursor:pointer;
+  }
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .modal-main {
+    position:fixed;
+    background: white;
+    width: 80%;
+    height: auto;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+  }
+  
+  .display-block {
+    display: block;
+  }
+  
+  .display-none {
+    display: none;
+  }
+  .CreatClassModalCSS{
+    width: 70vw;
+  }
+  .Modal_Header{
+    width: 100%;
+    padding: 2%;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: black;
+    color: white;
+  }
+  .Modal_Body{
+    padding: 2%;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    background-color: whitesmoke;
+  }
+  .Modal_Footer{
+    width: 100%;
+    padding: 2%;
+  }
+  .sticky-nav {
+    position: sticky;
+    top: 0;
+  }
+ .CreateOnto{
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  }
+  .ComponentContainer{
+  background-color:whitesmoke;
+  min-height: 30vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+  }
+  .MemberNameList{
+    cursor: pointer;
+    background-color: grey;
+    color: white;
+    margin: 0.5%;
+  }
+  .MemberNameList :hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+  }
+.LoadElement{
+ width: 80%;
+ height: 50%;
+ display: flex;
+flex-direction: column;
+align-items: flex-end;
+justify-content: space-between;
+border: 1px solid grey;
+}
+.miniHeader{
+height: 10vh;
+width: 100%;
+padding: 1%;
+text-align: center;
+color: black;
+background-color: white;
+}
+.list-group-item{
+  list-style: none;
+}
+
+
