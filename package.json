@@ -24,7 +24,7 @@
     "react-bootstrap": "^1.0.0-beta.16",
     "react-dom": "^16.12.0",
     "react-file-picker": "0.0.6",
-    "react-scripts": "3.3.0",
+    "react-scripts": "5.0.1",
     "react-treebeard": "^3.2.4",
     "react-treeviewer": "^1.0.0",
     "typescript": "^3.7.4"
